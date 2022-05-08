@@ -21,7 +21,7 @@ export default function Board(){
         const res = await fetchData();
         let b = res.filter((list) => list.city.includes(search) === true)
                     .slice(0,10);
-        // console.log(b);
+        console.log(b);
         setKeyItems(b);
     }
 
