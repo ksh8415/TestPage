@@ -15,8 +15,8 @@ export default function Board(){
 
     const updateData = async() => {
         const res = await fetchData();
-        let b = res.hits.filter((list) => list.title.includes(search) === true)
-        setKeyItems(b);
+        let data = res.hits.filter((list) => list.title.includes(search) === true)
+        setKeyItems(data);
     }
 
     useEffect(() => {
