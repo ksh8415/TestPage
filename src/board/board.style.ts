@@ -6,13 +6,13 @@ export const Wrapper = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 `
 
 export const Title = styled.div`
     font-size: 100px;
-    font-weight: 700;
+    font-weight: bold;
     color: white;
 `
 
@@ -23,6 +23,7 @@ export const SearchBarWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 `
 
 export const SearchImg = styled.img`
@@ -63,29 +64,28 @@ export const SearchMike = styled.img`
     margin: 0 5px;
 `
 
-export const AutoSearchContainer = styled.div`
+export const AutoSearchMainWrapper = styled.div`
     z-index: 3;
-    height: 50vh;
-    width: 400px;
+    width: 70%;
     background-color: #303135;
     position: absolute;
-    top: 45px;
     border: 2px solid;
-    padding: 15px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    position: relative;
+    bottom: 0px;
 `;
 
 export const AutoSearchWrap = styled.div`
-
 `;
 
 export const AutoSearchData = styled.div`
     padding: 10px 8px;
-    width: 100%;
+    width: 80%;
     color: white;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
     z-index: 4;
-    letter-spacing: 2px;
     &:hover {
         background-color: #303135;
         cursor: pointer;
